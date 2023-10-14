@@ -21,11 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateTimer(targetDate);
       }, 1000);
     },
-
-
   };
-
-
 
   flatpickr("#datetime-picker", options);
 
@@ -37,11 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Si la fecha ya ha pasado, detén el temporizador
     if (ms <= 0) {
-      
-    
-      clearInterval(timerInterval);
-      alert("¡please choose in the future time!");
-      btnStart.disabled = true;
+        clearInterval(timerInterval);
+        alert('¡please choose in the future time!');
+        btnStart.disabled = true;
       return;
     }
 
