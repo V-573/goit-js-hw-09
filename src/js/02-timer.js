@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
     
       clearInterval(timerInterval);
-      alert("¡Tiempo finalizado!");
+      alert("¡please choose in the future time!");
       btnStart.disabled = true;
       return;
     }
