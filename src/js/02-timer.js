@@ -1,5 +1,7 @@
 import flatpickr from "flatpickr";
 import "/node_modules/flatpickr/dist/flatpickr.min.css";
+import Notiflix from 'notiflix';
+
 
 let timerInterval; // Variable para almacenar el intervalo del temporizador
 
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Si la fecha ya ha pasado, detén el temporizador
     if (ms <= 0) {
         clearInterval(timerInterval);
-        alert('¡please choose in the future time!');
+          Notiflix.Notify.info('¡please choose in the future time!');
         btnStart.disabled = true;
       return;
     }
